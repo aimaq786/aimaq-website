@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aimaq</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Aimaq</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="openModal('culture')">فرهنگ</a></li>
+                <li><a href="#" onclick="openModal('politics')">سیاست</a></li>
+                <li><a href="#" onclick="openModal('articles')">مقالات</a></li>
+                <li><a href="#" onclick="openModal('sports')">ورزش</a></li>
+                <li><a href="#" onclick="openModal('art')">هنر</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="banner">
+            <img src="afghanistan-flag.png" alt="بیرق افغانستان">
+        </section>
+        <section class="gallery">
+            <!-- تصاویر آپلود شده اینجا نمایش داده می‌شوند -->
+        </section>
+    </main>
+
+    <footer>
+        <p>تمامی حقوق محفوظ است - 2025</p>
+    </footer>
+
+    <!-- پنجره‌های دسته‌بندی -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
